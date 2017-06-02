@@ -8,7 +8,6 @@ const Granim = require('granim');
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    title = '陈俊生';
 
     ngOnInit() {
         var granimInstance = new Granim({
@@ -42,4 +41,5 @@ export class AppComponent implements OnInit {
             }
         });
     }
+    
 }
