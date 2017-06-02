@@ -7,3 +7,5 @@ import '@angular/router';
 import '@angular/forms';
 // RxJS
 import 'rxjs';
+
+import 'granim';

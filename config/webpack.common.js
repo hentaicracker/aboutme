@@ -69,10 +69,12 @@ module.exports = {
     new webpack.LoaderOptionsPlugin({
       options: {
         postcss: [
-            autoprefixer()
+          autoprefixer()
         ]
       }
     }),
+
+    new ExtractTextPlugin('style.css'),
 
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']

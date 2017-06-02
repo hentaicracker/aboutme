@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import '../styles/main.scss';
+
 
 @NgModule({
   imports: [

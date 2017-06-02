@@ -1524,6 +1524,10 @@ graceful-fs@^4.1.2:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/graceful-readlink/download/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
+granim@^1.0.6:
+  version "1.0.6"
+  resolved "http://registry.npm.taobao.org/granim/download/granim-1.0.6.tgz#149064977b91ae3f0aec8e930da3f73ed18865b2"
+
 handle-thing@^1.2.5:
   version "1.2.5"
   resolved "http://registry.npm.taobao.org/handle-thing/download/handle-thing-1.2.5.tgz#fd7aad726bf1a5fd16dfc29b2f7a6601d27139c4"
