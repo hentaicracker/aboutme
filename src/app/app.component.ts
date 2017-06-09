@@ -21,9 +21,9 @@ export class AppComponent implements OnInit {
             states: {
                 "default-state": {
                     gradients: [
+                        ['#9D50BB', '#6E48AA'],
                         ['#B3FFAB', '#12FFF7'],
-                        ['#ADD100', '#7B920A'],
-                        ['#1A2980', '#26D0CE']
+                        ['#1A2980', '#26D0CE'],
                     ],
                     transitionSpeed: 10000
                 },
