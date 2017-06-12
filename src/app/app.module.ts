@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 
+import { AppService } from './app.service';
+
 
 import '../styles/main.scss';
 
@@ -21,7 +23,9 @@ import '../styles/main.scss';
     AppComponent,
     IndexComponent,
   ],
-  providers: [],
+  providers: [
+    AppService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

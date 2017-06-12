@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-const Granim = require('granim');
+const dontGo = require('dont-go');
+
+import { AppService } from './app.service';
 
 @Component({
     selector: 'app',
@@ -9,36 +11,12 @@ const Granim = require('granim');
 })
 export class AppComponent implements OnInit {
 
+    constructor(private appService: AppService) {}
+
     ngOnInit() {
-        var granimInstance = new Granim({
-            element: '#canvas-interactive',
-            name: 'interactive-gradient',
-            elToSetClassOn: '.wrapper',
-            direction: 'diagonal',
-            opacity: [1, 1],
-            isPausedWhenNotInView: true,
-            stateTransitionSpeed: 500,
-            states: {
-                "default-state": {
-                    gradients: [
-                        ['#9D50BB', '#6E48AA'],
-                        ['#B3FFAB', '#12FFF7'],
-                        ['#1A2980', '#26D0CE'],
-                    ],
-                    transitionSpeed: 10000
-                },
-                "violet-state": {
-                    gradients: [
-                        ['#9D50BB', '#6E48AA'],
-                        ['#4776E6', '#8E54E9']
-                    ],
-                    transitionSpeed: 2000
-                },
-                "orange-state": {
-                    gradients: [['#FF4E50', '#F9D423']],
-                    loop: false
-                }
-            }
+        this.appService.getInstance();
+        dontGo({
+            title: '你快回来！'
         });
     }
     

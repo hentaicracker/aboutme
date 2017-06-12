@@ -1,6 +1,10 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { routeChangeTrigger } from '../shared/animations';
 
+import { AppService } from '../app.service';
+
+const states = ['default-state', 'violet-state', 'orange-state', 'black-state'];
+
 @Component({
     selector: 'index',
     templateUrl: './index.component.html',
@@ -11,10 +15,27 @@ import { routeChangeTrigger } from '../shared/animations';
 })
 export class IndexComponent implements OnInit {
 
-    @HostBinding('@routeChangeTrigger') routeAnimation = true;
+    @HostBinding('@routeChangeState') routeAnimation = true;
 
-    ngOnInit() {
+    constructor(private appService: AppService) { }
 
+    ngOnInit() { }
+
+    onPlay() {
+        this.appService.play();
     }
-    
+
+    onPause() {
+        this.appService.pause();
+    }
+
+    onClear() {
+        this.appService.clear();
+    }
+
+    onSwitch() {
+        let num = Math.floor(Math.random() * 4);
+        this.appService.changeState(states[num]);
+    }
+
 }
