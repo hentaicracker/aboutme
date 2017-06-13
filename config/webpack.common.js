@@ -35,24 +35,47 @@ module.exports = {
         loader: 'file-loader?name=assets/[name].[hash].[ext]'
       },
       {
-        test: /\.css$/,
+        test: /\.(scss|sass)$/,
         exclude: helpers.root('src', 'app'),
-        loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: ['css-loader', 'postcss-loader'] })
-      },
-      {
-        test: /\.css$/,
-        include: helpers.root('src', 'app'),
-        loader: 'raw-loader!postcss-loader'
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: { autoprefixer: true, sourceMap: true, importLoaders: 1 }
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: true,
+                plugins: () => [autoprefixer({ browsers: ['iOS >= 7', 'Android >= 4.1'] })],
+              },
+            },
+            'sass-loader'
+          ]
+        })
       },
       {
         test: /\.(scss|sass)$/,
-        exclude: helpers.root('src', 'app'),
-        loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: ['css-loader', 'postcss-loader', 'sass-loader'] })
-      },
-      {
-        test: /\.(scss|sass)$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw-loader!postcss-loader!sass-loader'
+        use: [
+          {
+            loader: 'raw-loader'
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: () => [autoprefixer({ browsers: ['iOS >= 7', 'Android >= 4.1'] })],
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ]
       },
     ]
   },
@@ -69,12 +92,10 @@ module.exports = {
     new webpack.LoaderOptionsPlugin({
       options: {
         postcss: [
-          autoprefixer()
+          autoprefixer
         ]
       }
     }),
-
-    new ExtractTextPlugin('style.css'),
 
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']

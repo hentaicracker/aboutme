@@ -1,0 +1,20 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+:host {
+    @include flex-center;
+    height: 100%;
+}
+
+.overview {
+    &_avatar {
+        height: 200px;
+
+        > img {
+            display: inline-block;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid $white;
+        }
+    }
+}

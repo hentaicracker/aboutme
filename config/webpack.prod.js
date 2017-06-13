@@ -32,6 +32,11 @@ module.exports = webpackMerge(commonConfig, {
     new webpack.LoaderOptionsPlugin({
       htmlLoader: {
         minimize: false // workaround for ng2
+      },
+      options: {
+        postcss: [
+          autoprefixer
+        ]
       }
     })
   ]

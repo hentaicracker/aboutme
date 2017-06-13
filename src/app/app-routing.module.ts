@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { IndexComponent } from './index/index.component';
+import { OverviewComponent } from './overview/overview.component';
 
 const routes: Routes = [
     {
@@ -12,7 +13,11 @@ const routes: Routes = [
     {
         path: 'index',
         component: IndexComponent
-    }
+    },
+    {
+        path: 'overview',
+        component: OverviewComponent
+    },
 ];
 
 @NgModule({

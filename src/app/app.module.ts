@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
+import { OverviewComponent } from './overview/overview.component';
 
 import { AppService } from './app.service';
 
@@ -22,6 +23,7 @@ import '../styles/main.scss';
   declarations: [
     AppComponent,
     IndexComponent,
+    OverviewComponent,
   ],
   providers: [
     AppService

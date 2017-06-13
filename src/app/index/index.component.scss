@@ -19,6 +19,7 @@
     &_btn_wrapper {
         > a {
             @include button;
+            text-decoration: none;
         }
     }
 }

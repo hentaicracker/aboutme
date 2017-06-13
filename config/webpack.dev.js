@@ -1,6 +1,8 @@
+var webpack = require('webpack');
 var webpackMerge = require('webpack-merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var commonConfig = require('./webpack.common.js');
+var autoprefixer = require('autoprefixer');
 var helpers = require('./helpers');
 
 module.exports = webpackMerge(commonConfig, {
@@ -14,7 +16,15 @@ module.exports = webpackMerge(commonConfig, {
   },
 
   plugins: [
-    new ExtractTextPlugin('[name].css')
+    new ExtractTextPlugin('[name].css'),
+
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          autoprefixer
+        ]
+      }
+    }),
   ],
 
   devServer: {
