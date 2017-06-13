@@ -17,4 +17,8 @@
     outline: 0;
     box-shadow: 0 0 5px;
     border-radius: 5px;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
 }

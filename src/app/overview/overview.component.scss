@@ -7,6 +7,12 @@
 }
 
 .overview {
+
+    section {
+        margin: 1rem 0;
+        max-width: 400px;
+    }
+
     &_avatar {
         height: 200px;
 
@@ -15,6 +21,19 @@
             width: 200px;
             border-radius: 50%;
             border: 2px solid $white;
+        }
+    }
+
+    &_title {
+        > h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+    }
+
+    &_btns {
+        > a {
+            @include button;
         }
     }
 }
