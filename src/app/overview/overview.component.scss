@@ -36,4 +36,13 @@
             @include button;
         }
     }
+
+    &_content {
+        p a {
+            color: $white;
+            font-size: 2rem;
+            font-family: $apple-font-en;
+            text-decoration: none;
+        }
+    }
 }

@@ -9,4 +9,3 @@ import '@angular/forms';
 import 'rxjs';
 
 import 'granim';
-import 'dont-go';

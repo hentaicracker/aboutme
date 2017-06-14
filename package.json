@@ -21,12 +21,13 @@
     "@angular/platform-browser-dynamic": "~4.0.0",
     "@angular/router": "~4.0.0",
     "core-js": "^2.4.1",
-    "dont-go": "^1.0.8",
+    "echarts": "^3.6.1",
     "granim": "^1.0.6",
     "rxjs": "5.0.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
+    "@types/echarts": "^0.0.6",
     "@types/jasmine": "2.5.36",
     "@types/node": "^6.0.45",
     "angular2-template-loader": "^0.6.0",
