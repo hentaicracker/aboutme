@@ -1,9 +1,7 @@
 import { Component, HostBinding, OnDestroy } from '@angular/core';
 import { routeChangeTrigger } from '../shared/animations';
 
-import * as echarts from 'echarts';
-import ECharts = echarts.ECharts;
-import EChartOption = echarts.EChartOption;
+import { mapOptions } from './map-options';
 
 import { AppService } from '../app.service';
 
@@ -18,6 +16,8 @@ const states = ['default-state', 'violet-state', 'orange-state', 'black-state'];
     ]
 })
 export class LocationComponent implements OnDestroy {
+
+    chartOption = mapOptions;
 
     @HostBinding('@routeChangeState') routeAnimation = true;
 

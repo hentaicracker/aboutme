@@ -9,6 +9,8 @@ import { IndexComponent } from './index/index.component';
 import { OverviewComponent } from './overview/overview.component';
 import { LocationComponent } from './location/location.component';
 
+import { EchartsMapDirective } from './shared/echarts.directive'
+
 import { AppService } from './app.service';
 
 
@@ -26,6 +28,7 @@ import '../styles/main.scss';
     IndexComponent,
     OverviewComponent,
     LocationComponent,
+    EchartsMapDirective,
   ],
   providers: [
     AppService

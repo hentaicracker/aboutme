@@ -1,0 +1,11 @@
+@import '../../styles/mixins';
+
+:host {
+    @include flex-center;
+    height: 100%;
+}
+
+.map {
+    width: 50%;
+    height: 60%;
+}

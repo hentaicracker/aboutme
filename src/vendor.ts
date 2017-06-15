@@ -9,3 +9,7 @@ import '@angular/forms';
 import 'rxjs';
 
 import 'granim';
+import 'echarts/lib/echarts';
+import 'echarts/lib/chart/map';
+import 'echarts/lib/chart/scatter';
+import 'echarts/map/js/china';
