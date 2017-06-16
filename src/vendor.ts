@@ -8,6 +8,7 @@ import '@angular/forms';
 // RxJS
 import 'rxjs';
 
+// 引用的库
 import 'granim';
 import 'echarts/lib/echarts';
 import 'echarts/lib/chart/map';
