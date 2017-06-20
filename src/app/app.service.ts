@@ -22,6 +22,11 @@ const states = {
     },
     "black-state": {
         gradients: [['#FFFFFF', '#000000']],
+    },
+    "gradient-state": {
+        gradients:[
+            ['#ff3eff', '#003eff']
+        ]
     }
 }
 

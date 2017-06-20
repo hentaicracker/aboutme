@@ -22,7 +22,7 @@ export class OverviewComponent implements OnInit, OnDestroy {
     ngOnInit() { }
 
     ngOnDestroy () {
-        this.appService.changeState('orange-state');
+        this.appService.changeState('gradient-state');
     }
 
 }
