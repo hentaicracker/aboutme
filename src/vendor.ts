@@ -6,10 +6,11 @@ import '@angular/common';
 import '@angular/router';
 import '@angular/forms';
 // RxJS
-import 'rxjs';
+// import 'rxjs';
 
 // 引用的库
 import 'granim';
+import 'swiper';
 import 'echarts/lib/echarts';
 import 'echarts/lib/chart/map';
 import 'echarts/lib/chart/scatter';

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+import { SwiperModule } from './angular-swiper/swiper.module';
 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
@@ -21,7 +22,8 @@ import '../styles/main.scss';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   declarations: [
     AppComponent,

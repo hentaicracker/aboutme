@@ -31,6 +31,7 @@
     "@types/echarts": "^0.0.6",
     "@types/jasmine": "2.5.36",
     "@types/node": "^6.0.45",
+    "@types/swiper": "^3.4.2",
     "angular2-template-loader": "^0.6.0",
     "autoprefixer": "^7.1.1",
     "awesome-typescript-loader": "^3.0.4",
