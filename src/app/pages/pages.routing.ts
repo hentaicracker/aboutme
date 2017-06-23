@@ -9,7 +9,6 @@ const routes: Routes = [
     {
         path: '',
         redirectTo: '/index',
-        pathMatch: 'full'
     },
     {
         path: 'index',
@@ -26,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [ RouterModule.forRoot(routes) ],
-    exports: [ RouterModule ]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class PagesRoutingModule { }
