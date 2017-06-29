@@ -1,9 +1,9 @@
 import { Component, HostBinding, OnDestroy } from '@angular/core';
-import { routeChangeTrigger } from '../shared/animations';
+import { routeChangeTrigger } from '../../shared/animations';
 
 import { mapOptions } from './map-options';
 
-import { AppService } from '../app.service';
+import { AppService } from '../../app.service';
 
 const states = ['default-state', 'violet-state', 'orange-state', 'black-state'];
 

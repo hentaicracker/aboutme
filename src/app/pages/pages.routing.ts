@@ -6,10 +6,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { LocationComponent } from './location/location.component';
 
 const routes: Routes = [
-    {
-        path: '',
-        redirectTo: '/index',
-    },
+    
     {
         path: 'index',
         component: IndexComponent
@@ -25,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
 export class PagesRoutingModule { }

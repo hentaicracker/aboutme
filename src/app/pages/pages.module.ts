@@ -15,8 +15,8 @@ import { AppService } from '../app.service';
 @NgModule({
   imports: [
     CommonModule,
+    ComponentsModule,
     PagesRoutingModule,
-    ComponentsModule
   ],
   declarations: [
     IndexComponent,

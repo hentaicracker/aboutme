@@ -15,8 +15,8 @@ import '../styles/main.scss';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    PagesModule,
     AppRoutingModule,
-    PagesModule
   ],
   declarations: [
     AppComponent
