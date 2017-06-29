@@ -6,7 +6,6 @@ import { OverviewComponent } from './overview/overview.component';
 import { LocationComponent } from './location/location.component';
 
 const routes: Routes = [
-    
     {
         path: 'index',
         component: IndexComponent

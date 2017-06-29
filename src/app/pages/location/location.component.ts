@@ -5,8 +5,6 @@ import { mapOptions } from './map-options';
 
 import { AppService } from '../../app.service';
 
-const states = ['default-state', 'violet-state', 'orange-state', 'black-state'];
-
 @Component({
     selector: 'location',
     templateUrl: './location.component.html',
