@@ -5,9 +5,9 @@ export const routeChangeTrigger = trigger('routeChangeState', [
         style({
             opacity: 0,
         }),
-        animate('2000ms')
+        animate('3000ms')
     ]),
-    transition(':leave', animate(1000, style({
+    transition(':leave', animate(2000, style({
         opacity: 0
     })))
 ]);

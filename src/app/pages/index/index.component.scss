@@ -1,9 +1,9 @@
 @import '../../../styles/mixins';
 
-// :host {
-//     @include flex-center;
-//     height: 100%;
-// }
+:host {
+    @include flex-center;
+    height: 100%;
+}
 
 .content {
     position: absolute;

@@ -1,5 +1,5 @@
 import { Component, HostBinding } from '@angular/core';
-import { routeChangeTrigger } from '../../shared/animations';
+// import { routeChangeTrigger } from '../../shared/animations';
 
 @Component({
     selector: 'container',
@@ -9,13 +9,8 @@ import { routeChangeTrigger } from '../../shared/animations';
         </div>
     `,
     styleUrls: ['./container.component.scss'],
-    animations: [
-        routeChangeTrigger
-    ]
 })
 export class ContainerComponent {
-
-    @HostBinding('@routeChangeState') routeAnimation = true;
 
     constructor() { }
 

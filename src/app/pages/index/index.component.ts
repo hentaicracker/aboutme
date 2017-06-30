@@ -1,5 +1,5 @@
 import { Component, OnInit, HostBinding, OnDestroy } from '@angular/core';
-// import { routeChangeTrigger } from '../../shared/animations';
+import { routeChangeTrigger } from '../../shared/animations';
 
 import { AppService } from '../../app.service';
 
@@ -9,13 +9,13 @@ const states = ['default-state', 'violet-state', 'orange-state', 'black-state'];
     selector: 'index',
     templateUrl: './index.component.html',
     styleUrls: ['./index.component.scss'],
-    // animations: [
-    //     routeChangeTrigger
-    // ]
+    animations: [
+        routeChangeTrigger
+    ]
 })
 export class IndexComponent implements OnInit, OnDestroy {
 
-    // @HostBinding('@routeChangeState') routeAnimation = true;
+    @HostBinding('@routeChangeState') routeAnimation = true;
 
     constructor(private appService: AppService) { }
 
