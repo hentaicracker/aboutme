@@ -7,13 +7,16 @@
 
 .content {
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 40%;
     color: #fff;
 
     h1 {
         font-size: 5rem;
         font-weight: normal;
+        > img {
+            width: 100%;
+        }
     }
 
     &_btn_wrapper {

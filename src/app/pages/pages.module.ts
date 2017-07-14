@@ -8,7 +8,8 @@ import { IndexComponent } from './index/index.component';
 import { OverviewComponent } from './overview/overview.component';
 import { LocationComponent } from './location/location.component';
 
-import { EchartsMapDirective } from '../shared/echarts.directive'
+import { EchartsMapDirective } from '../shared/echarts.directive';
+import { HeightFixDirective } from './overview/height.fix.directive';
 
 import { AppService } from '../app.service';
 
@@ -23,6 +24,7 @@ import { AppService } from '../app.service';
     OverviewComponent,
     LocationComponent,
     EchartsMapDirective,
+    HeightFixDirective,
   ],
   providers: [
     AppService

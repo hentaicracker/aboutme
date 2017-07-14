@@ -4,6 +4,22 @@
 @import './icomoon';
 @import './font';
 
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,pre,code,
+form,fieldset,legend,input,button,
+textarea,p,blockquote,th,td,section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-weight: normal;
+}
+
+html {
+    font-size: 22px;
+}
+
 body {
     position: absolute;
     bottom: 0;
@@ -13,6 +29,12 @@ body {
     overflow: hidden;
     margin: 0;
     font-family: $apple-font;
-    font-size: 22px;
+    font-size: 1em;
     color: $white;
+}
+
+@include mobile {
+    html {
+        font-size: 16px;
+    }
 }
