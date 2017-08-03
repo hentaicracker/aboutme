@@ -2,6 +2,7 @@ import { Component, OnInit, HostBinding, OnDestroy } from '@angular/core';
 import { routeChangeTrigger } from '../../shared/animations';
 
 import { AppService } from '../../app.service';
+import { OverviewService } from './overview.service';
 
 const states = ['default-state', 'violet-state', 'orange-state', 'black-state'];
 
@@ -15,9 +16,16 @@ const states = ['default-state', 'violet-state', 'orange-state', 'black-state'];
 })
 export class OverviewComponent implements OnInit, OnDestroy {
 
+    profile: object
+
     @HostBinding('@routeChangeState') routeAnimation = true;
 
-    constructor(private appService: AppService) { }
+    constructor(
+        private appService: AppService,
+        private overviewService: OverviewService
+    ) {
+        this.profile = this.overviewService.getData();
+    }
 
     ngOnInit() { }
 

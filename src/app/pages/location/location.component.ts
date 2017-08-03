@@ -19,7 +19,9 @@ export class LocationComponent implements OnDestroy {
 
     @HostBinding('@routeChangeState') routeAnimation = true;
 
-    constructor(private appService: AppService) { }
+    constructor(
+        private appService: AppService
+    ) { }
 
     ngOnDestroy () {
         this.appService.changeState('violet-state');
