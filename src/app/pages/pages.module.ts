@@ -7,11 +7,13 @@ import { ComponentsModule } from '../components/components.module';
 import { IndexComponent } from './index/index.component';
 import { OverviewComponent } from './overview/overview.component';
 import { LocationComponent } from './location/location.component';
+import { TodosComponent } from './todos/todos.component';
 
 import { EchartsMapDirective } from '../shared/echarts.directive';
 import { HeightFixDirective } from './overview/height.fix.directive';
 
 import { AppService } from '../app.service';
+import { OverviewService } from './overview/overview.service';
 
 @NgModule({
   imports: [
@@ -23,11 +25,13 @@ import { AppService } from '../app.service';
     IndexComponent,
     OverviewComponent,
     LocationComponent,
+    TodosComponent,
     EchartsMapDirective,
     HeightFixDirective,
   ],
   providers: [
-    AppService
+    AppService,
+    OverviewService,
   ],
 })
 export class PagesModule { }
